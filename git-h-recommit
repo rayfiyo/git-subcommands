@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "commits    : git reset --soft HEAD^"
+echo "           : git restore --staged <file name>"
+echo "           : git restore <file name>"
+echo "1st commit : git update-ref -d HEAD^"
+echo "           : git restore --staged <file name>"
+echo "           : git restore <file name>"
