@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "= New repository:"
+echo "  ginitcp"
+echo "  ginitpy # optional"
+echo "  git { init / add -A / commit -m \"Initial commit🌱\" }"
+echo "  git branch -M main"
+echo "  git remote add origin git@github.com:rayfiyo/❗.git"
+echo "  git push -u origin main"
+echo "= File exists ∨ rejected"
+echo "  git pull origin main --allow-unrelated-histories"
+echo "= When advised to use --set-upstream"
+echo "  git merge --allow-unrelated-histories origin/main"
+# echo "Substantial initial commitment🌱"
