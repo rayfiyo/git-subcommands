@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if git diff --cached --quiet; then
+    echo "There are no staged changes."
+    exit 0
+fi
+
+{
+    printf '以下の変更に関するコミットメッセージはどのようなものが最適ですか？日本語と英語でそれぞれ生成してください。コミットメッセージのみの出力で構いません。\n```bash\n$ git diff --staged\n'
+    git diff --staged
+} | yagi -model google/gemini-flash-lite-latest
