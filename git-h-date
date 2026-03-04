@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "git rebase -i --committer-date-is-author-date HEAD~1"
+echo "# pick を edit に変更した後↑、日付を確認する↓"
+echo " git log | head -n3"
+echo "git commit --amend --no-edit --date=\"Mon, 30 Jan 2023 16:54:23 +0900\""
+echo "git rebase --continue"
+echo "git filter-branch -f --env-filter \'export GIT_COMMITTER_DATE=\"\$GIT_AUTHOR_DATE\"\' -- --all"
