@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp -i ~/.config/git/inits/hooks/changelog.config.js ~/.config/git/inits/hooks/LICENSE ~/.config/git/inits/hooks/README.md ~/.config/git/inits/hooks/.gitignore .
+cp -i ~/.config/git/inits/hooks/.gitignore ~/.config/git/inits/hooks/changelog.config.js ~/.config/git/inits/hooks/LICENSE ~/.config/git/inits/hooks/README.md .

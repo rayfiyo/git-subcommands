@@ -1,0 +1,5 @@
+#!/bin/bash
+
+GT=$(git rev-parse --show-toplevel)
+
+cp ~/.config/git/.flake8 $GT/.flake8

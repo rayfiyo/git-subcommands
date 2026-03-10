@@ -1,0 +1,8 @@
+#!/bin/bash
+
+GT=$(git rev-parse --show-toplevel)
+
+cp ~/.config/git/inits/hooks/.gitignore.go $GT/.gitignore
+cp ~/.config/git/inits/hooks/.golangci.yml $GT/.golangci.yml
+echo -e 'STEP 1:\n git add $GT/changelog.config.js\n'
+echo -e 'STEP2:\n git cz\n  setting\n  changelog.config.js を更新\n'

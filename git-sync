@@ -1,0 +1,9 @@
+#!/bin/bash
+
+GT=$(git rev-parse --show-toplevel)
+
+cp ~/.config/git/inits/hooks/.gitignore $GT/.gitignore
+cp ~/.config/git/inits/hooks/changelog.config.js $GT/changelog.config.js
+cp ~/.config/git/inits/hooks/commit-msg $GT/.git/hooks/commit-msg
+echo -e 'STEP 1:\n git add $GT/changelog.config.js\n'
+echo -e 'STEP2:\n git cz\n  setting\n  changelog.config.js を更新\n'
