@@ -2,8 +2,8 @@
 
 echo "= New repository:"
 echo "  git initcp"
-echo "  git initgo # optional"
-echo "  git initpy # optional"
+echo "  git sync-go # optional"
+echo "  git sync-py # optional"
 echo "  git { init / add -A / commit -m \"Initial commit🌱\" }"
 echo "  git branch -M main"
 echo "  git remote add origin git@github.com:rayfiyo/❗.git"

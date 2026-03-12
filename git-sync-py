@@ -2,4 +2,8 @@
 
 GT=$(git rev-parse --show-toplevel)
 
-cp ~/.config/git/.flake8 $GT/.flake8
+cp -i ~/.config/git/inits/hooks/.gitignore.py $GT/.gitignore
+cp -i ~/.config/git/inits/hooks/.flake8 $GT/.flake8
+
+echo -e 'STEP 1:\n git add $GT/changelog.config.js\n'
+echo -e 'STEP2:\n git cz\n  setting\n  changelog.config.js を更新\n'
