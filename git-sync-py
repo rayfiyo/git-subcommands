@@ -2,7 +2,7 @@
 
 GT=$(git rev-parse --show-toplevel)
 
-cp -i ~/.config/git/inits/hooks/.gitignore.py $GT/.gitignore
+cat ~/.config/git/inits/hooks/.gitignore.py >> $GT/.gitignore
 cp -i ~/.config/git/inits/hooks/.flake8 $GT/.flake8
 
 echo -e 'STEP 1:\n git add $GT/changelog.config.js\n'

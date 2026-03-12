@@ -2,7 +2,7 @@
 
 GT=$(git rev-parse --show-toplevel)
 
-cp -i ~/.config/git/inits/hooks/.gitignore.go $GT/.gitignore
+cat ~/.config/git/inits/hooks/.gitignore.go >> $GT/.gitignore
 cp -i ~/.config/git/inits/hooks/.golangci.yml $GT/.golangci.yml
 
 echo -e 'STEP 1:\n git add $GT/changelog.config.js\n'
