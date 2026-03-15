@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "= New repository:"
+echo "  git init"
 echo "  git initcp"
 echo "  git sync-go # optional"
 echo "  git sync-py # optional"
